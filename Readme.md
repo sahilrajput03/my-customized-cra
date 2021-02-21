@@ -31,4 +31,9 @@ rs-start # Alias for `react-scripts start`
 
 Refer other templates @ https://github.com/facebook/create-react-app/tree/master/packages
 
+### For sublime to remove tsc jsx errors, just do
+
+**Change `jsx` property to `preserve` in tsconfig.json file.**
+
 Thanks.
+
