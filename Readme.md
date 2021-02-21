@@ -29,4 +29,6 @@ echo "declare module \"*.svg\" {
 rs-start # Alias for `react-scripts start`
 ```
 
+Refer other templates @ https://github.com/facebook/create-react-app/tree/master/packages
+
 Thanks.
