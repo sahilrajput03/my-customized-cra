@@ -39,3 +39,14 @@ https://packagecontrol.io/packages/TypeScript (If you don't find way to install 
 
 Thanks.
 
+### Tip: You can add the required scripts using sed too
+
+```
+sed -i '2i\ \ "scripts": {\
+    "start": "npm start",\
+    "test": "npm test",\
+    "build": "npm run build",\
+    "eject": "npm run eject"\
+  },' package.json
+```
+and all that will be put at second line in `package.json`.  **But scripts won't work, coz you are exp
