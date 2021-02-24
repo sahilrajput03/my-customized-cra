@@ -31,10 +31,9 @@ rs-start # Alias for `react-scripts start`
 
 Refer other templates @ https://github.com/facebook/create-react-app/tree/master/packages
 
-### ~~For sublime to fix jsx return type errors, just do~~
+### For sublime it just works out of the box with original typescript package, yikes!!
 
-**react jsx is brocken for sublime** -> ~~Add "typescript_tsdk": "node_modules/typescript/lib" in user settings of typescript in sublime text.
-src: https://stackoverflow.com/a/65552270 , Yikes!~~ track progress on a pr though.. > https://github.com/microsoft/TypeScript-Sublime-Plugin/pull/720
+https://packagecontrol.io/packages/TypeScript (If you don't find way to install it via package manager in sublime, install it directly via git cloning way as mentioned in its github repo).
 
 Thanks.
 
