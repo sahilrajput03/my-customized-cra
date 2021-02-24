@@ -49,4 +49,4 @@ sed -i '2i\ \ "scripts": {\
     "eject": "npm run eject"\
   },' package.json
 ```
-and all that will be put at second line in `package.json`.  **But scripts won't work, coz you are exp
+and all that will be put at second line in `package.json`.  **But scripts won't work, coz you are expected to use globally installed react-scripts binary. Yo**
