@@ -33,7 +33,7 @@ Refer other templates @ https://github.com/facebook/create-react-app/tree/master
 
 ### For sublime to fix jsx return type errors, just do
 
-Add "typescript_tsdk": "node_modules/typescript/lib" in user settings of typescript in sublime text.
+**react jsx is brocken for sublime** -> Add "typescript_tsdk": "node_modules/typescript/lib" in user settings of typescript in sublime text.
 src: https://stackoverflow.com/a/65552270 , Yikes!
 
 Thanks.
