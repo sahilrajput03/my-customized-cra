@@ -7,7 +7,13 @@ cp -r template/* .
 rm template.json
 rm -rf template
 yarn add react react-dom web-vitals #Note: react-scripts in not installed but you should have it installed globally, yikes!
-rs-start # Alias for `react-scripts start`
+sed -i '2i\ \ "scripts": {\
+    "start": "react-scripts start",\
+    "test": "react-scripts test",\
+    "build": "react-scripts run build",\
+    "eject": "react-scripts run eject"\
+  },' package.json
+yarn start
 ```
 
 This is well tested and you need to press y when `react-scripts start` executes so as to create default configs in package.json file, yikes!
@@ -28,7 +34,13 @@ echo "declare module \"*.svg\" {
   const content: any;
   export default content;
 }" > src/custom.d.ts
-rs-start # Alias for `react-scripts start`
+sed -i '2i\ \ "scripts": {\
+    "start": "react-scripts start",\
+    "test": "react-scripts test",\
+    "build": "react-scripts run build",\
+    "eject": "react-scripts run eject"\
+  },' package.json
+yarn start
 ```
 
 Refer other templates @ https://github.com/facebook/create-react-app/tree/master/packages
@@ -38,15 +50,3 @@ Refer other templates @ https://github.com/facebook/create-react-app/tree/master
 https://packagecontrol.io/packages/TypeScript (If you don't find way to install it via package manager in sublime, install it directly via git cloning way as mentioned in its github repo).
 
 Thanks.
-
-### Tip: You can add the required scripts using sed too
-
-```
-sed -i '2i\ \ "scripts": {\
-    "start": "npm start",\
-    "test": "npm test",\
-    "build": "npm run build",\
-    "eject": "npm run eject"\
-  },' package.json
-```
-and all that will be put at second line in `package.json`.  **But scripts won't work, coz you are expected to use globally installed react-scripts binary. Yo**
