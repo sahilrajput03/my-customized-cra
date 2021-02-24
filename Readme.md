@@ -31,9 +31,10 @@ rs-start # Alias for `react-scripts start`
 
 Refer other templates @ https://github.com/facebook/create-react-app/tree/master/packages
 
-### For sublime to remove tsc jsx errors, just do
+### For sublime to fix jsx return type errors, just do
 
-**Change `jsx` property to `preserve` in tsconfig.json file.**
+Add "typescript_tsdk": "node_modules/typescript/lib" in user settings of typescript in sublime text.
+src: https://stackoverflow.com/a/65552270 , Yikes!
 
 Thanks.
 
