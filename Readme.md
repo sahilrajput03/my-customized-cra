@@ -20,6 +20,7 @@ gitf https://github.com/facebook/create-react-app/tree/master/packages/cra-templ
 mv cra-template-typescript my-react-typescript-app && cd my-react-typescript-app
 cp -r template/* .
 rm -rf template
+rm template.json
 yarn add react react-dom web-vitals #Note: react-scripts in not installed but you should have it installed globally, yikes!
 yarn add -D typescript @types/react @types/react-dom
 echo "declare module \"*.svg\" {
